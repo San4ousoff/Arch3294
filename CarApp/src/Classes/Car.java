@@ -12,14 +12,14 @@ public abstract class Car {
     private TypeGearbox gearbox;
     private float engineCap;
 
-    public Car(String make, 
-                String model, 
-                Color color, 
-                TypeCar bodyType, 
-                int numberWheels, 
-                TypeFuel fuel,
-                TypeGearbox gearbox, 
-                float engineCap) {
+    public Car(String make,
+            String model,
+            Color color,
+            TypeCar bodyType,
+            int numberWheels,
+            TypeFuel fuel,
+            TypeGearbox gearbox,
+            float engineCap) {
         this.make = make;
         this.model = model;
         this.color = color;
@@ -30,17 +30,19 @@ public abstract class Car {
         this.engineCap = engineCap;
     }
 
-    public void movement(){}
-    
-    public void maintenance(){}
+    public void movement() {
+    }
+
+    public void maintenance() {
+    }
 
     public abstract int gearShift(int gear);
 
-    public boolean turnLights(){
+    public boolean turnLights() {
         return true;
     }
 
-    public boolean trnWprs(){
+    public boolean trnWprs() {
         return true;
     }
 
